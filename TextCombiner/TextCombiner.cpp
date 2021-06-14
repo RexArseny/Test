@@ -10,13 +10,12 @@ void search(fs::path dir)
     for (auto& i : fs::directory_iterator(dir))
     {
         fs::path temp = i.path();
-        if (temp.empty()) continue;
         if (temp.extension() == ".txt")
         {
             string text;
             ifstream input(temp);
             input >> text;
-            ofstream res("D:/result.txt", ios::app);
+            ofstream res("D:/a/result.txt", ios::app);
             res << text;
         }
         else search(temp);
@@ -25,7 +24,7 @@ void search(fs::path dir)
 
 int main()
 {
-    char dir[10] = "D:/a/b";
+    fs::path dir = "D:/a/b";
 
     search(dir);
 
