@@ -1,7 +1,7 @@
 FROM python
 
-WORKDIR /app
-
 COPY . .
+
+RUN req
 
 CMD ["python", "test.py"]
