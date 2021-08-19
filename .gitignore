@@ -9,6 +9,7 @@
 *.properties
 *.bat
 *.kts
+*.github
 Debug
 venv
 gradle
