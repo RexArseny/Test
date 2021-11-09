@@ -5,7 +5,7 @@
 *.sln
 *.idea
 *.gradle
-*.json
+
 *.properties
 *.bat
 *.kts
